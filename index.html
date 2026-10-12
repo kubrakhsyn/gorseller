@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Etkileşimli Görseller</title>
+  <style>
+    :root { --bg:#fafaf8; --fg:#1d2430; --muted:#5b6573; --line:#d9dde3; --accent:#1a4d8f; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#14181f; --fg:#e8ebf0; --muted:#9aa5b4; --line:#2a313c; --accent:#7fb0ee; }
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--fg); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height:1.6; }
+    header, section { max-width: 1100px; margin: 0 auto; padding: 24px 16px; }
+    header { padding-top: 40px; }
+    h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 0 0 8px; }
+    h2 { font-size: 1.3rem; margin: 0 0 12px; }
+    p.alt { color: var(--muted); margin: 0; }
+    section { border-top: 1px solid var(--line); }
+    nav { margin-top: 16px; display:flex; gap:16px; flex-wrap:wrap; }
+    nav a { color: var(--accent); }
+    .gorsel { background:#fff; border-radius:6px; padding:8px; overflow-x:auto; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Etkileşimli Görseller</h1>
+    <p class="alt">Üç etkileşimli görsel aşağıda. Üzerine gelerek veya tıklayarak inceleyebilirsin.</p>
+    <nav>
+      <a href="#gorsel1">Görsel 1</a>
+      <a href="#gorsel2">Görsel 2</a>
+      <a href="#gorsel3">Görsel 3</a>
+    </nav>
+  </header>
+
+  <section id="gorsel1">
+    <h2>Görsel 1</h2>
+    <div class="gorsel">
+      <div class="flourish-embed flourish-chart" data-src="story/3833665"><noscript><img src="https://public.flourish.studio/story/3833665/thumbnail" width="100%" alt="görsel 1" /></noscript></div>
+    </div>
+  </section>
+
+  <section id="gorsel2">
+    <h2>Görsel 2</h2>
+    <div class="gorsel">
+      <div class="flourish-embed flourish-bubble-chart" data-src="visualisation/30523817"><noscript><img src="https://public.flourish.studio/visualisation/30523817/thumbnail" width="100%" alt="görsel 2" /></noscript></div>
+    </div>
+  </section>
+
+  <section id="gorsel3">
+    <h2>Görsel 3</h2>
+    <div class="gorsel">
+      <div class="flourish-embed flourish-hierarchy" data-src="visualisation/30523476"><noscript><img src="https://public.flourish.studio/visualisation/30523476/thumbnail" width="100%" alt="görsel 3" /></noscript></div>
+    </div>
+  </section>
+
+  <!-- Flourish betiği sayfada bir kez yüklenir, tüm görselleri başlatır -->
+  <script src="https://public.flourish.studio/resources/embed.js"></script>
+</body>
+</html>
